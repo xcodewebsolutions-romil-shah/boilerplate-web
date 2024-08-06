@@ -1,0 +1,5 @@
+﻿@model Exception
+
+<p>
+    @Html.Raw(Model.Message + " " + Model.InnerException?.Message)
+</p>

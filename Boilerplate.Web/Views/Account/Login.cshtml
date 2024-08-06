@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Boilerplate.Web</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="CodedThemes" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="~/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="~/plugins/animation/css/animate.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+
+            <form method="post" action="/Account/Index">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <i class="feather icon-unlock auth-icon"></i>
+                        </div>
+                        <h3 class="mb-4">Login</h3>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="User Name" id="UserName" name="UserName" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <input type="password" class="form-control" placeholder="password" id="Password" name="password" required>
+                        </div>
+                        <input type="submit" class="btn btn-primary shadow-2 mb-4" value="Login"/>
+                        @*<button class="btn btn-primary shadow-2 mb-4" onclick="window.location.href='@Url.Action("Index", "Home")'">Login</button>*@
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Required Js -->
+    <script src="~/js/vendor-all.min.js"></script>
+    <script src="~/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/pcoded.min.js"></script>
+
+</body>
+</html>
